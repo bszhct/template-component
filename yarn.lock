@@ -25,12 +25,12 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@bszhct/template-base@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@bszhct/template-base/-/template-base-0.0.1.tgz#21c4e94c14a72796e3536b75547920039d693de0"
-  integrity sha512-eO9wGJ2pZqBqAEGAw0AxPZlt68D3V8/tZaTDOE3kho6ckSnJhipdoXZdDlXCSKaFiKRhIW2GXLsOB+lNeec0ew==
+"@bszhct/template-base@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@bszhct/template-base/-/template-base-0.0.2.tgz#f545346e1415a22ac8df2159956eabd7da2158fa"
+  integrity sha512-KCQ78KDDQnfokdu8ZErGjEo94aLWbgHTJW5s8Q7LdK7hVGNojY7uANOVs0554G+gja171v+VVQSdFUVkeUf07w==
   dependencies:
-    "@bszhct/template-eslint" "0.0.1"
+    "@bszhct/template-eslint" "0.0.2"
     concurrently "5.0.0"
     cross-env "6.0.3"
     husky "3.0.9"
@@ -40,6 +40,22 @@
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@bszhct/template-eslint/-/template-eslint-0.0.1.tgz#4b3f028570cacc5e757f3dd3f69485a7f0eda038"
   integrity sha512-gH3WceNZObURxHkLXjMZmgPc3K1BPRI20l2OxSn5vvwWJBImntb5H3G4nLgQFVwYPyU1jpY23Szr0mU/hDmK4Q==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "2.6.0"
+    "@typescript-eslint/parser" "2.6.0"
+    eslint "6.6.0"
+    eslint-config-airbnb "18.0.1"
+    eslint-loader "3.0.2"
+    eslint-plugin-babel "5.3.0"
+    eslint-plugin-import "2.18.2"
+    eslint-plugin-jsx-a11y "6.2.3"
+    eslint-plugin-react "7.16.0"
+    typescript "3.6.4"
+
+"@bszhct/template-eslint@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@bszhct/template-eslint/-/template-eslint-0.0.2.tgz#ec3696573f046a74642b20823ff0cfab09e15c70"
+  integrity sha512-AxDbSYEaDMcMcg6Tk5iXOX/Yjb2BpexdB2ANKUpSC6vg1OKdpeBuarDRll5l/foguCqbF753tY0ZMqIHB8g3ag==
   dependencies:
     "@typescript-eslint/eslint-plugin" "2.6.0"
     "@typescript-eslint/parser" "2.6.0"
