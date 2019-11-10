@@ -9,8 +9,10 @@ const pkg = require('./package.json')
 const isDev = process.env.NODE_ENV === 'development'
 // 取到设置的组件名称
 const [prefix, pkgName] = pkg.name.split('/')
+// 工程名称
+const projectName = pkgName || prefix
 // 组件名称, 转为首字母大写的形式
-const library = pkgName
+const library = projectName
   .split('-')
   .map(n => n.toLowerCase().replace(/( |^)[a-z]/g, s => s.toUpperCase()))
   .join('')
@@ -19,7 +21,7 @@ const library = pkgName
 module.exports = merge(base, {
   entry: {
     example: './example/index.tsx',
-    [pkgName]: './src/index.ts',
+    [projectName]: './src/index.ts',
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -38,7 +40,7 @@ module.exports = merge(base, {
     compress: true,
     inline: true,
     hot: true,
-    port: 9002,
+    port: 9001,
     host: '0.0.0.0',
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -52,15 +54,15 @@ if (!isDev) {
   // 合并生成环境的配置
   module.exports = merge(module.exports, {
     entry: {
-      [`${pkgName}.min`]: ['./src/index.styl', './src/index.ts'],
+      [`${projectName}.min`]: ['./src/index.styl', './src/index.ts'],
     },
     devtool: 'source-map',
     plugins: [
       new MiniCssExtractPlugin({
-        filename: `${pkgName}.min.css`,
+        filename: `${projectName}.min.css`,
       }),
       new webpack.BannerPlugin(`
-        ${pkgName} v${pkg.version}
+        ${projectName} v${pkg.version}
         Copyright 2019-present bszhct.
         All rights reserved.
       `),
