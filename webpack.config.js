@@ -18,6 +18,7 @@ const library = projectName
   .join('')
 
 
+base.plugins = []
 module.exports = merge(base, {
   entry: {
     example: './example/index.tsx',
