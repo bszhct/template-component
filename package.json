@@ -28,7 +28,7 @@
   "author": "bszhct",
   "dependencies": {
     "@bszhct/template-base": "0.0.2",
-    "@bszhct/template-webpack": "0.0.7",
+    "@bszhct/template-webpack": "0.1.0",
     "react": "16.11.0",
     "react-dom": "16.11.0"
   },

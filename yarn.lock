@@ -52,10 +52,10 @@
     eslint-plugin-react "7.16.0"
     typescript "3.6.4"
 
-"@bszhct/template-webpack@0.0.7":
-  version "0.0.7"
-  resolved "http://r.cnpmjs.org/@bszhct/template-webpack/download/@bszhct/template-webpack-0.0.7.tgz#fa9197aa59b207969334c4ac062395de8210782a"
-  integrity sha1-+pGXqlmyB5aTNMSsBiOV3oIQeCo=
+"@bszhct/template-webpack@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/@bszhct/template-webpack/download/@bszhct/template-webpack-0.1.0.tgz#4a4702887173e1b77a8a5e6b91c1b2556cade3d0"
+  integrity sha1-SkcCiHFz4bd6il5rkcGyVWyt49A=
   dependencies:
     "@bszhct/template-eslint" "0.0.2"
     autoprefixer "9.7.1"
